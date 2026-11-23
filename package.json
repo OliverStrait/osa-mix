@@ -12,7 +12,11 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "types": "tsc"
+    "test:once": "vitest run",
+    "build:types": "tsc",
+    "prebuild": "npm run test:once",
+    "build": "npm run build:types && git add types",
+    "post": "git push && git push --tags"
   },
   "devDependencies": {
     "typescript": "^7.0.2",
