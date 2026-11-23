@@ -19,5 +19,13 @@
   "exports": {
     ".": "./src/index.js",
     "./pages": "./src/pages.js"
+  },
+  "homepage": "https://github.com/OliverStrait/osa-mix#readme",
+  "bugs": {
+    "url": "https://github.com/OliverStrait/osa-mix/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OliverStrait/osa-mix.git"
   }
 }
