@@ -1,0 +1,23 @@
+{
+  "name": "osa-mix",
+  "version": "0.0.1",
+  "description": "snippet library for fundamental functions",
+  "keywords": [
+    "snippet",
+    "function"
+  ],
+  "license": "MIT",
+  "author": "Olli Salmela",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^5.1.1"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./pages": "./src/pages.js"
+  }
+}
