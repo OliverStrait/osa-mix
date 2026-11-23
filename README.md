@@ -5,3 +5,18 @@
 - Atomistic functions that does one-thing and do it properly and fast as possible. 
 - In data-structure there is only one versio of TODO-application, only one version of pagination that produce usefull datatype that describe the problem.
 - All need to be able to test with unit tests.
+
+
+## Build
+
+```bash
+npm run prebuild
+npm run build
+
+# Commit changes if build has no errors
+# run version bump  patch, minor, majos
+npm version patch
+
+# publish to repository 
+npm run post
+```
