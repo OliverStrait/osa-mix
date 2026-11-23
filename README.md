@@ -7,7 +7,7 @@
 - All need to be able to test with unit tests.
 
 
-## Build
+## Build version
 
 ```bash
 npm run prebuild
@@ -17,6 +17,6 @@ npm run build
 # run version bump  patch, minor, majos
 npm version patch
 
-# publish to repository 
+# publish to repository. Use
 npm run post
 ```
