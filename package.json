@@ -1,6 +1,6 @@
 {
   "name": "osa-mix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "snippet library for fundamental functions",
   "keywords": [
     "snippet",
@@ -11,14 +11,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "types": "tsc"
   },
   "devDependencies": {
+    "typescript": "^7.0.2",
     "vitest": "^5.1.1"
   },
   "exports": {
-    ".": "./src/index.js",
-    "./pages": "./src/pages.js"
+    "./pages": {
+      "types": "./types/pages.d.ts",
+      "import": "./src/pages.js"
+    }
   },
   "homepage": "https://github.com/OliverStrait/osa-mix#readme",
   "bugs": {
